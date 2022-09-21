@@ -87,6 +87,10 @@ nav{
     width: 230px;
     height: 100%;
     background-color: var(--side-bar-bkg);
+    color: var(--white);
+}
+nav ul{
+    list-style: none;
 }
 
 main{
@@ -314,6 +318,23 @@ i:hover{
 .logo-small{
     transform: scale(0.2);
     display: none;
+}
+.text-S{
+    color: var(--nav-font-gray);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.text-M{
+    color: var(--nav-font-gray);
+    font-size: 13px;
+    font-weight: bold;
+}
+.text-L{
+    color: var(--white);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
  /************************************************
     RESPONSIVE
