@@ -27,8 +27,7 @@
 }
 .debug{
     border: 1px solid blue;
-    height: 175px;
-    width: 175px;
+    height: 30px;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -182,6 +181,41 @@ header li a{
 /*************************************************
     PLAYBAR
  *************************************************/
+ .d-flex{
+    display: flex;
+ }
+ .space-btwn{
+    justify-content: space-between;
+ }
+ .align-center{
+    align-items: center;
+ }
+ .playbar{
+    padding: 1.5rem 0.5rem;
+ }
+ .playbar-box{
+    width: calc(100% / 3);
+ }
+ .img-xs{
+    width: 45px;
+    height: 45px;
+ }
+ .img-xs img{
+    width: 100%;
+ }
+ .title-xs{
+    color: var(--white);
+    font-size: 10px;
+    font-weight: bold;
+ }
+ .subtitle-xs{
+    font-size: 8px;
+    color: var(--nav-font-gray);
+ }
+ .player-small-icons{
+    font-size: 12px;
+    color: var(--icon-light-gray);
+ }
  /*************************************************
     SIDEBAR
  *************************************************/
