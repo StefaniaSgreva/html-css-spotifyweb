@@ -9,7 +9,8 @@
 :root{
     /* COLOR  */
     --white: #FFFFFF;
-    --top-bar-bkg: #080B12;
+    --black: #000000;
+    --top-bar-bkg: #080b127e;
     --side-bar-bkg: #000000;
     --playbar-bkg: #282828;
     --main-bkg: #141922;
@@ -25,11 +26,12 @@
     --subtitle: 12px;
 }
 .debug{
-    border: 1px solid red;
+    border: 1px solid blue;
     height: 50px;
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--black);
 }
 /*************************************************
     LAYOUT
@@ -38,17 +40,21 @@ body{
     width: 100%;
     height: 100vh;
 }
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 aside{
-    width: 100%;
-    height: 95px;
-    background-color: rgba(0,0,0 ,0.5);
+    width: calc(1440px - 230px);
+    height: 90px;
+    background-color: var(--top-bar-bkg);
     position: fixed;
-    top: 0%;
+    top: 0;
     z-index: 1000;
 }
 main{
     width: 100%;
-    height: calc(100vh - 95px);
+    height: calc(100vh - 90px);
     display: flex;
 }
 .main-content{
@@ -61,19 +67,39 @@ main{
     height: 100%;
     overflow-y: scroll;
 }
+header{
+    max-width: 630px;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+header li a{
+   text-decoration: none;
+   font-size: 13px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: var(--main-font-gray);
+}
 nav{
     width: 230px;
     height: 100%;
     background-color: aquamarine;
 }
 .playbar{
-    width: 100%;
-    height: 95px;
+    width: 1440px;
+    height: 90px;
     background-color: brown;
     position: fixed;
     bottom: 0;
     z-index: 2000;
 }
+
 /*************************************************
     TOP BAR
  *************************************************/
