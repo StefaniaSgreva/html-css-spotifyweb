@@ -27,11 +27,39 @@
 }
 .debug{
     border: 1px solid blue;
-    height: 50px;
+    height: 175px;
+    width: 175px;
 }
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: var(--black);
+}
+.section-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 2rem;
+    
+}
+.subtitle{
+    font-size: 12px;
+    color: var(--main-font-gray);
+    margin-top: 0.75rem;
+}
+.card-box{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -0.75rem; 
+    margin-right: -0.75rem;
+    margin-bottom: 45px;
+}
+.card{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    width: calc((100% / 6) - 1.5rem);
+}
+.rounded{
+    border-radius: 50%;
 }
 /*************************************************
     LAYOUT
@@ -44,14 +72,12 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
-aside{
-    width: calc(1440px - 230px);
-    height: 90px;
-    background-color: var(--top-bar-bkg);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+nav{
+    width: 230px;
+    height: 100%;
+    background-color: aquamarine;
 }
+
 main{
     width: 100%;
     height: calc(100vh - 90px);
@@ -60,19 +86,26 @@ main{
 .main-content{
     width: calc(100% - 230px);
     height: 100%;
-    background-color: blanchedalmond;
+    background-color: var(--main-bkg);
     overflow: hidden;
 }
 .inner-content{
     height: 100%;
     overflow-y: scroll;
 }
+aside{
+    width: calc(1440px - 230px);
+    height: 90px;
+    background-color: var(--top-bar-bkg);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 header{
     max-width: 630px;
     margin-top: 110px;
     margin-left: auto;
     margin-right: auto;
-
 }
 header ul{
     list-style: none;
@@ -86,15 +119,14 @@ header li a{
    text-transform: uppercase;
    color: var(--main-font-gray);
 }
-nav{
-    width: 230px;
-    height: 100%;
-    background-color: aquamarine;
+.formatting{
+    padding: 1.5rem;
+    margin-top: 30px;
 }
 .playbar{
     width: 1440px;
     height: 90px;
-    background-color: brown;
+    background-color: var(--playbar-bkg);
     position: fixed;
     bottom: 0;
     z-index: 2000;
@@ -103,6 +135,24 @@ nav{
 /*************************************************
     TOP BAR
  *************************************************/
+ .relative{
+    position: relative;
+ }
+ aside button{
+   position: absolute;
+   top:15px;
+   right: 0;
+ }
+ .btn{
+    width: 220px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--top-bar-bkg);
+ }
  /*************************************************
     MAIN CONTENT
  *************************************************/
