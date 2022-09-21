@@ -41,10 +41,20 @@ body{
     margin-bottom: 1rem;
     
 }
+.album-title{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    margin-top: 1rem;
+}
 .subtitle{
     font-size: 12px;
     color: var(--main-font-gray);
     margin-top: 0.75rem;
+}
+.center{
+    text-align: center;
 }
 .card-box{
     display: flex;
@@ -58,6 +68,13 @@ body{
     margin-right: 0.75rem;
     width: calc((100% / 6) - 1.5rem);
     margin-top: 1rem;
+}
+.image-box{
+    width: 175px;
+    height: 175px;
+}
+.image-box img{
+    width: 100%;
 }
 .rounded{
     border-radius: 50%;
@@ -76,7 +93,7 @@ body{
 nav{
     width: 230px;
     height: 100%;
-    background-color: aquamarine;
+    background-color: var(--side-bar-bkg);
 }
 
 main{
@@ -150,10 +167,9 @@ header li a{
    
  }
  .btn{
-    padding: 20px 50px;
-    border: 1px solid var(--white);
+    height: 45px;
+    width: 220px;
     border-radius: 30px;
-    text-decoration: none;
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
@@ -169,6 +185,14 @@ header li a{
  /*************************************************
     SIDEBAR
  *************************************************/
+ .logo{
+    height: 45px;
+    margin: 15px 1.5rem;
+ }
+.logo-small{
+    transform: scale(0.2);
+    display: none;
+}
  /************************************************
     RESPONSIVE
  ************************************************/
