@@ -89,29 +89,26 @@ a:focus, .content-menu ul li a:focus{
     text-align: center;
 }
 .menu-text{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--main-font-gray);
+    margin-bottom: 1.5rem;
 }
 .section-title{
     font-size: 24px;
     font-weight: bold;
-    /* margin-bottom: 1rem; */
-    line-height: 1.5rem;  
 }
 .album-title{
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    color: var(--white);
     margin-top: 1rem;
-    line-height: 1.5rem;
 }
 .subtitle{
-    font-size: 0.80rem;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: bold;
     color: var(--main-font-gray);
-    margin-top: 0.50rem;
+    margin-top: 0.75rem;
 }
 ul li{
     list-style: none;
@@ -180,6 +177,8 @@ img{
     border-radius: 30px;
     padding: 0.75rem 2rem;
     margin-right: 1rem;
+    font-size: 14px;
+    font-weight: bold;
 }
 .top-bar a.btn:hover, .top-bar a.btn:active, .top-bar a.btn:focus{
     transform: scale(1.1);
@@ -190,7 +189,7 @@ img{
  *************************************************/
 .inner-content{
     height: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 2rem;
 }
 .content-menu ul li a{
@@ -208,7 +207,7 @@ img{
 /*************************************************
     COVER SECTION
  *************************************************/
-.covers{
+ .covers{
     margin: 0 -10px;
 }
 .cover{
@@ -246,15 +245,12 @@ img{
     bottom: 0;
     z-index: 2000;
     background-color: var(--playbar-bkg);
+    padding: 0 0.5rem;
 }
  .music-player{
     height: 90px;
-
-    --padding: 0.5rem;
+     --padding: 0.5rem;
     padding-top: 0.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 i:hover{
@@ -263,18 +259,11 @@ i:hover{
 .song-bar {
     position: absolute;
     left: var(--padding);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     gap: 1.5rem;
     width: 25%;
 }
 
 .song-infos {
-    display: flex;
-    align-items: center;
     gap: 1em;
 }
 .image-container {
@@ -304,31 +293,23 @@ i:hover{
 }
 
 .icons{
-    display: flex;
     gap: 1rem;
     padding-left: 1rem;
     color: var(--icon-light-gray);
 }
 .progress-controller{
     width: 100%;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
+    margin-bottom: 0.50rem;
     color: var(--white);
 }
 .control-buttons{
-    display: flex;
-    align-items: center;
     gap: 2em;
 }
 
 .progress-container{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1em;
 }
 .progress-bar{
@@ -351,15 +332,10 @@ i:hover{
 .other-features{
     position: absolute;
     right: var(--padding);
-    display: flex;
-    flex-direction: row;
     gap: 1em;
     color: var(--white);
-
 }
 .volume-bar{
-    display: flex;
-    align-items: center;
     gap: .7em;
 }
 .volume-bar .progress-bar{
@@ -412,7 +388,6 @@ i:hover{
     .cover{
         width: 100%;
     }
-  
 }
 
 

@@ -16,197 +16,249 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <main>
-                <!-- SIDEBAR  -->
-                <nav>
-                   <div class="logo">
-                        <img src="./img/logo.svg" alt="logo" class="logo">
-                        <img src="./img/logo-small.svg" alt="logo" class="logo-small">
-                   </div>
-                   <ul class="text-S">
-                        <li><a href="#"></a>Home</li>
-                        <li><a href="#"></a>Cerca</li>
-                        <li><a href="#"></a>La tua libreria</li>
-                   </ul>
-                   <div class="playlist">
-                        <div class="text-L">playlist</div>
-                        <div class="text-M">Crea Playlist</div>
-                        <ul class="text-S">
-                            <li><a href="#"></a>Nome Playlist</li>
-                            <li><a href="#"></a>Nome Playlist</li>
-                            <li><a href="#"></a>Nome Playlist</li>
-                            <li><a href="#"></a>Nome Playlist</li>
-                            <li><a href="#"></a>Nome Playlist</li>
-                            <li><a href="#"></a>Nome Playlist</li>
-                            <li><a href="#"></a>Nome Playlist</li>
-                            <li><a href="#"></a>Nome Playlist</li>
+        <main class="d-flex">
+            <!-- SIDEBAR  -->
+            <nav class="left-sidebar">
+               <div class="logo">
+                    <img src="./img/logo.svg" alt="logo" class="logo">
+                    <img src="./img/logo-small.svg" alt="logo" class="logo-small">
+                </div>
+               <ul class="text-S">
+                    <li><a href="#"></a>Home</li>
+                    <li><a href="#"></a>Cerca</li>
+                    <li><a href="#"></a>La tua libreria</li>
+               </ul>
+               <div class="playlist">
+                    <div class="text-L">playlist</div>
+                    <div class="text-M">Crea Playlist</div>
+                    <ul class="text-S">
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                    </ul>
+               </div>
+
+            </nav>
+            <!-- MAIN CONTENT -->
+            <div class="main-content">
+                <!-- TOP BAR  -->
+                <div class="top-bar d-flex justify-end align-center">
+                    <a class="btn d-block text-uppercase" href="#" >Effettua l'upgrade</a>
+                </div>
+                <!-- MENU + ALBUM  -->
+                <div class="inner-content">
+                    <nav class="content-menu d-flex justify-center mb-1">
+                        <ul class="d-flex justify-center flex-wrap">
+                            <li><a class="text-uppercase menu-text active" href="#">In evidenza</a></li>
+                            <li><a class="text-uppercase menu-text" href="#">Podcast</a></li>
+                            <li><a class="text-uppercase menu-text" href="#">Classifiche</a></li>
+                            <li><a class="text-uppercase menu-text" href="#">Generi e mood</a></li>
+                            <li><a class="text-uppercase menu-text" href="#">Nuove uscite</a></li>
+                            <li><a class="text-uppercase menu-text" href="#">Scopri</a></li>  
                         </ul>
-                   </div>
-  
-                </nav>
-    
-                <!-- MAIN CONTENT -->
-                <section class="main-content">
-                    <section class="inner-content">
-                        <!-- TOP BAR  -->
-                        <div class="aside-container">
-                            <aside class="flexbox">
-                                <button class="btn">effettua l'upgrade</button>   
-                            </aside>
+                    </nav>
+                    <section class="cover-section mb-1">
+                        <div class="section-title mb-1">
+                            <h2>Recently Played</h2>
                         </div>
-                       
-                        <!-- HEADER  -->
-                        <header>
-                            <ul>
-                                <li><a href="#">in evidenza</a></li>
-                                <li><a href="#">podcast</a></li>
-                                <li><a href="#">classifiche</a></li>
-                                <li><a href="#">generi e mood</a></li>
-                                <li><a href="#">nuove uscite</a></li>
-                                <li><a href="#">scopri</a></li>
-                            </ul>
-                        </header>
-                        <!-- PLAYLIST  -->
-                        <div class="formatting">
-                            <section id="recently-played">
-                                <div class="section-title">Recently played</div>
-                                <div class="card-box">
-                                    <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/beepuppycat.jpg" alt="Coding Mode">
-                                        </div>
-                                        <div class="album-title">Coding Mode</div>
-                                        <div class="subtitle center">Dedicated to all the programmers out there</div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/stranger.jpeg" alt="Stranger Things">
-                                        </div>
-                                        <div class="album-title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</div>
-                                        <div class="subtitle center">Kyle Dixon & Michael Stein</div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/busycoding.jpg" alt="Focus playlist">
-                                        </div>
-                                        <div class="album-title">Focus</div>
-                                        <div class="subtitle center">Work hard play hard</div>
-                                    </div> <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/battisti.jpg" alt="Romantic Mix">
-                                        </div>
-                                        <div class="album-title">Romantic Mix</div>
-                                        <div class="subtitle center">Lucio Battisti and others</div>
-                                    </div> <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/wellness.jpg" alt="a cure for wellness">
-                                        </div>
-                                        <div class="album-title">A cure for wellness</div>
-                                        <div class="subtitle center">By 9stef1</div>
-                                    </div> <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/jpop.jpg" alt="J-pop">
-                                        </div>
-                                        <div class="album-title">J-pop Mix</div>
-                                        <div class="subtitle center">Belle and others</div>
+                        <div class="covers d-flex justify-start flex-wrap">
+                            <div class="cover mb-1">
+                                <div class="cover-image">
+                                    <img src="./img/beepuppycat.jpg" alt="Coding Mode">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
                                     </div>
                                 </div>
-                            </section>
-                            <section id="user-playlist">
-                                <div class="section-title">Creato per Stefania 
-                                    <div class="subtitle">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</div>
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">Coding Mode</h3>
+                                    <p class="subtitle">Dedicated to all the programmers out there</p>
                                 </div>
-                                <div class="card-box">
-                                    <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/radar.jpeg" alt="Release Radar">
-                                        </div>
-                                        <div class="album-title">Release Radar</div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="image-box">
-                                            <img src="./img/mixdaily.jpeg" alt="Daily Mix 1">
-                                        </div>
-                                        <div class="album-title">Daily Mix 1</div>
+                            </div>
+                            <div class="cover mb-1">
+                                <div class="cover-image">
+                                    <img src="./img/stranger.jpeg" alt="Stranger Things">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
                                     </div>
                                 </div>
-                            </section>
-                            <section id="popular-artists">
-                                <div class="section-title">Artisti pi&ugrave; popolari
-                                    <div class="subtitle">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</div>
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                    <p class="subtitle">Kyle Dixon & Michael Stein</p>
                                 </div>
-                                <div class="card-box">
-                                    <div class="card">
-                                        <div class="image-box">
-                                            <img  class="rounded" src="./img/einaudi.jpeg" alt="Ludovico Enaudi">
-                                        </div>
-                                        <div class="album-title">Ludovico Enaudi</div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="image-box">
-                                            <img  class="rounded" src="./img/youg.jpeg" alt="Lana Del Rey">
-                                        </div>
-                                        <div class="album-title">Lana Del Rey</div>
+                            </div>
+                            <div class="cover mb-1">
+                                <div class="cover-image">
+                                    <img src="./img/busycoding.jpg" alt="Focus playlist">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
                                     </div>
                                 </div>
-                            </section>
-                        </div>
-    
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">Focus playlist</h3>
+                                    <p class="subtitle">Work hard play hard</p>
+                                </div>
+                            </div>
+                            <div class="cover mb-1">
+                                <div class="cover-image">
+                                    <img src="./img/battisti.jpg" alt="Romantic Mix">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">Romantic Mix</h3>
+                                    <p class="subtitle">Lucio Battisti and others</p>
+                                </div>
+                            </div>
+                            <div class="cover mb-1">
+                                <div class="cover-image">
+                                    <img src="./img/wellness.jpg" alt="a cure for wellness">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">A cure for wellness</h3>
+                                    <p class="subtitle">By 9stef1</p>
+                                </div>
+                            </div>
+                            <div class="cover mb-1">
+                                <div class="cover-image">
+                                    <img src="./img/jpop.jpg" alt="J-pop Mix">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">J-pop Mix</h3>
+                                    <p class="subtitle">Belle and others</p>
+                                </div>
+                            </div>
+                        </div> 
                     </section>
-                </section>
-            </main>
-    
-            <!-- PLAYBAR  -->
-            <div class="playbar">
-              <div class="music-player">
-                    <div class="song-bar">
-                        <div class="song-infos">
-                            <div class="image-container">
-                               <img src="./img/youg.jpeg" alt="">
+
+                    <section class="cover-section mb-1">
+                        <div class="section-title mb-1">
+                            <h2>Creato per Stefania</h2>
+                            <h3 class="subtitle">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h3>
+                        </div>
+                        <div class="covers d-flex justify-start flex-wrap">
+                            <div class="cover mb-1">
+                                <div class="cover-image">
+                                    <img src="./img/radar.jpeg" alt="Release Radar">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">Release Radar</h3>
+                                </div>
+                        </div>
+                        <div class="cover mb-1">
+                            <div class="cover-image">
+                                <img src="./img/mixdaily.jpeg" alt="Daily Mix 1">
+                                <div class="cover-overlay d-flex justify-center align-center">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
-                            <div class="song-description">
-                                <span class="title">
-                                    Young and Beautiful
-                                </span>
-                                <span class="artist">Lana Del Ray</span>
+                            <div class="cover-text text-center">
+                                <h3 class="album-title">Daily Mix 1</h3>
                             </div>
+                        </div>   
+                    </section>
+
+                    <section class="cover-section mb-1">
+                        <div class="section-title mb-1">
+                            <h2>Artisti pi&ugrave; popolari</h2>
+                            <h3 class="subtitle">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</h3>
                         </div>
-                        <div class="icons">
-                            <i class="far fa-heart"></i>
-                            <i class="fa-regular fa-folder"></i>
+                        <div class="covers d-flex justify-start flex-wrap">
+                            <div class="cover mb-1">
+                                <div class="cover-image rounded-cover">
+                                    <img src="./img/einaudi.jpeg" alt="Ludovico Enaudi">
+                                    <div class="cover-overlay d-flex justify-center align-center">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="cover-text text-center">
+                                    <h3 class="album-title">Ludovico Enaudi</h3>
+                                </div>
                         </div>
-                    </div>
-                    <div class="progress-controller">
-                        <div class="control-buttons">
-                            <i class="fas fa-random"></i>
-                            <i class="fas fa-step-backward"></i>
-                            <i class=" play fa-regular fa-circle-play"></i>
-                            <i class="fas fa-step-forward"></i>
-                            <i class="fa-solid fa-rotate-right"></i>
-                        </div>
-                        <div class="progress-container">
-                            <span class="timing">0:25</span>
-                            <div class="progress-bar">
-                                <div class="progress"></div>
+                        <div class="cover mb-1">
+                            <div class="cover-image rounded-cover">
+                                <img src="./img/youg.jpeg" alt="Lana Del Rey">
+                                <div class="cover-overlay d-flex justify-center align-center">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
                             </div>
-                            <span class="timing">4:35</span>
-                        </div>
-                    </div>
-                    <div class="other-features">
-                        <i class="fas fa-list-ul"></i>
-                        <i class="fas fa-desktop"></i>
-                        <div class="volume-bar">
-                            <i class="fa-solid fa-volume-high"></i>
-                            <div class="progress-bar">
-                                <div class="progress"></div>
+                            <div class="cover-text text-center">
+                                <h3 class="album-title">Lana Del Rey</h3>
                             </div>
-                        </div>
+                        </div>   
+                    </section>
+
+                        
+
+                        
+                    
+                </div>
+            </div>
+        </main> 
+
+        <!-- PLAYBAR  -->
+    <div class="playbar">
+        <div class="music-player d-flex justify-center align-center">
+              <div class="song-bar d-flex align-center justify-start">
+                  <div class="song-infos d-flex align-center">
+                      <div class="image-container">
+                         <img src="./img/youg.jpeg" alt="">
+                      </div>
+                      <div class="song-description">
+                          <span class="title">
+                              Young and Beautiful
+                          </span>
+                          <span class="artist">Lana Del Ray</span>
+                      </div>
+                  </div>
+                  <div class="icons d-flex">
+                      <i class="far fa-heart"></i>
+                      <i class="fa-regular fa-folder"></i>
+                  </div>
+              </div>
+              <div class="progress-controller d-flex justify-center align-center">
+                  <div class="control-buttons d-flex align-center">
+                      <i class="fas fa-random"></i>
+                      <i class="fas fa-step-backward"></i>
+                      <i class=" play fa-regular fa-circle-play"></i>
+                      <i class="fas fa-step-forward"></i>
+                      <i class="fa-solid fa-rotate-right"></i>
+                  </div>
+                  <div class="progress-container d-flex align-center justify-center">
+                      <span class="timing">0:25</span>
+                      <div class="progress-bar">
+                          <div class="progress"></div>
+                      </div>
+                      <span class="timing">4:35</span>
+                  </div>
+              </div>
+              <div class="other-features d-flex">
+                  <i class="fas fa-list-ul"></i>
+                  <i class="fas fa-desktop"></i>
+                  <div class="volume-bar d-flex align-center">
+                      <i class="fa-solid fa-volume-high"></i>
+                      <div class="progress-bar">
+                          <div class="progress"></div>
+                      </div>
                     </div>
                 </div>
             </div>
-    
         </div>
     </div>
+    
 </body>
 </html>
