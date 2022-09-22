@@ -80,8 +80,8 @@ body{
     height: 100vh;
 }
 .container{
-    max-width: 1440px;
-    margin: 0 auto;
+  max-width: 1440px;  
+  margin: 0 auto;
 }
 nav{
     width: 230px;
@@ -108,14 +108,12 @@ main{
     height: 100%;
     overflow-y: scroll;
 }
+
 aside{
-    width: calc(1440px - 230px);
     height: 90px;
     background-color: var(--top-bar-bkg);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
 }
+
 .flexbox{
     display: flex;
     flex-flow: row wrap;
@@ -148,9 +146,7 @@ header li a{
     margin-top: 30px;
 }
 .playbar{
-    width: 1440px;
-    height: 90px;
-    background-color: var(--playbar-bkg);
+    width: 100%;
     position: fixed;
     bottom: 0;
     z-index: 2000;
@@ -179,16 +175,18 @@ header li a{
 /*************************************************
     PLAYBAR
  *************************************************/
- .music-player {
-    --padding: 0.5rem;
-    margin-top: 0.75rem;
+ .music-player{
+    max-width: 1440px;
     background-color: var(--playbar-bkg);
+    height: 90px;
+
+    --padding: 0.5rem;
+    padding-top: 0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-
 i:hover{
     color: var(--green-yellow);
 }
@@ -339,13 +337,22 @@ i:hover{
  /************************************************
     RESPONSIVE
  ************************************************/
+ /* DESKTOP  */
+ @media screen and (max-width:1200px) {
+    .container{
+          min-width: 878px;    
+    }
+    .card{
+        width: calc((100% / 4) - 1.5rem);
+        }
+}   
  /* TABELET  */
  @media screen and (max-width:992px) {
    .container{
          min-width: 878px;
    }
    .card{
-    width: calc((100% / 4) - 1.5rem);
+    width: calc((100% / 3) - 1.5rem);
     }
  }
  /* PHONE S  */
@@ -362,19 +369,20 @@ i:hover{
  @media screen and (max-width:576px) {
     .container{
         min-width: 552px;
-  }
-  nav{
-    width: 50px;
-}
-.main-content{
-    width: calc(100% - 50px);
-}
-aside{
-    width: calc(1440px - 50px);
-}
-  .card{
-   width: 100%;
-   }
+    }
+    .card{
+        width: 100%;
+    }
+    nav{
+        width: 50px;
+    }
+    .main-content{
+        width: calc(100% - 50px);
+    }
+    aside{
+        width: calc(1440px - 50px);
+    }
+  
 }
 
 
