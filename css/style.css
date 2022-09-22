@@ -1,11 +1,6 @@
 /*************************************************
     GENERAL STYLES
  *************************************************/
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 :root{
     /* COLOR  */
     --white: #FFFFFF;
@@ -19,20 +14,90 @@
     --nav-font-gray: #717171;
     --green-yellow: #ADFF2F;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .debug{
     border: 1px solid blue;
-    height: 30px;
+    height: 50px;
 }
+/*************************************************
+    LAYOUT
+ *************************************************/
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--black);
+    background-color: var(--main-bkg);
+    color: var(--white);
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+main{
+    width: 100%;
+    height: calc(100vh - 90px); 
+}
+/*************************************************
+    COMMON
+ *************************************************/
+ul{
+    list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-start{
+    justify-content: start;
+}
+.justify-end{
+    justify-content: end;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.d-block{
+   display: block;
+}
+.mb-1{
+    margin-bottom: 1.5rem;
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover, .content-menu ul li a:hover,
+a:hover, .content-menu ul li a:active,
+a:focus, .content-menu ul li a:focus{
+    color: var(--white);
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
+}
+.menu-text{
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--main-font-gray);
 }
 .section-title{
     font-size: 24px;
     font-weight: bold;
-    color: var(--white);
-    margin-bottom: 1rem;
-    
+    /* margin-bottom: 1rem; */
+    line-height: 1.5rem;  
 }
 .album-title{
     font-size: 16px;
@@ -40,144 +105,149 @@ body{
     text-align: center;
     color: var(--white);
     margin-top: 1rem;
+    line-height: 1.5rem;
 }
 .subtitle{
-    font-size: 12px;
+    font-size: 0.80rem;
+    font-weight: 600;
     color: var(--main-font-gray);
-    margin-top: 0.75rem;
+    margin-top: 0.50rem;
 }
-.center{
-    text-align: center;
+ul li{
+    list-style: none;
 }
-.card-box{
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: -0.75rem; 
-    margin-right: -0.75rem;
-    margin-bottom: 45px;
-}
-.card{
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    width: calc((100% / 6) - 1.5rem);
-    margin-top: 1rem;
-}
-.image-box{
-    width: 175px;
-    height: 175px;
-}
-.image-box img{
+img{
     width: 100%;
-}
-.rounded{
-    border-radius: 50%;
+    max-width: 100%;
+    display: block;
 }
 /*************************************************
-    LAYOUT
+    LEFT SIDEBAR
  *************************************************/
- .wrapper{
-    width: 100%;
-    height: 100vh;
-}
-.container{
-  max-width: 1440px;  
-  margin: 0 auto;
-}
-nav{
+.left-sidebar{
     width: 230px;
     height: 100%;
     background-color: var(--side-bar-bkg);
+}
+.logo{
+    height: 45px;
+    margin: 15px 1.5rem;
+ }
+.logo-small{
+    transform: scale(0.2);
+    display: none;
+}
+.text-S{
+    color: var(--nav-font-gray);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+.text-M{
+    color: var(--nav-font-gray);
+    font-size: 13px;
+    font-weight: bold;
+}
+.text-L{
     color: var(--white);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
-nav ul{
-    list-style: none;
-}
-
-main{
-    width: 100%;
-    height: calc(100vh - 90px);
-    display: flex;
-}
+/*************************************************
+    MAIN
+ *************************************************/
 .main-content{
     width: calc(100% - 230px);
     height: 100%;
     background-color: var(--main-bkg);
-    overflow: hidden;
+    overflow: auto; 
 }
-.inner-content{
-    height: 100%;
-    overflow-y: scroll;
-}
-
-aside{
-    height: 90px;
-    background-color: var(--top-bar-bkg);
-}
-
-.flexbox{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: end;
-    align-items: center;
-}
-header{
-    max-width: 630px;
-    margin-top: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
-header ul{
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-header li a{
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--main-font-gray);
-}
-
-.formatting{
-    padding: 1.5rem;
-    margin-top: 30px;
-}
-.playbar{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 2000;
-}
-
 /*************************************************
     TOP BAR
  *************************************************/
- 
- aside button{
-   
- }
- .btn{
-    height: 45px;
-    width: 220px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--white);
+.top-bar{
+    width: calc(100% - 230px);
+    height: 90px;
     background-color: var(--top-bar-bkg);
- }
- /*************************************************
-    MAIN CONTENT
+    position: fixed;
+    top: 0;
+    left: 230px;
+    z-index: 1000;
+}
+.top-bar .btn{
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    padding: 0.75rem 2rem;
+    margin-right: 1rem;
+}
+.top-bar a.btn:hover, .top-bar a.btn:active, .top-bar a.btn:focus{
+    transform: scale(1.1);
+    /* transition: ease-in-out; */
+}
+/*************************************************
+    INNER CONTENT
  *************************************************/
+.inner-content{
+    height: 100%;
+    margin-top: 100px;
+    padding: 2rem;
+}
+.content-menu ul li a{
+    padding: .50rem .75rem;
+    display: inline-block;
+}
+.content-menu ul li a.active::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--green-yellow);
+    margin: 5px auto;
+}
+/*************************************************
+    COVER SECTION
+ *************************************************/
+.covers{
+    margin: 0 -10px;
+}
+.cover{
+    width: calc(100% / 6);
+    padding: 10px;
+    cursor: pointer;
+}
+.rounded-cover{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.cover:hover .cover-overlay{
+    display: flex;
+}
+.cover-image{
+    position: relative;
+}
+.cover-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--top-bar-bkg);
+    font-size: 5rem;
+    display: none;
+}
 /*************************************************
     PLAYBAR
  *************************************************/
- .music-player{
-    max-width: 1440px;
+ .playbar{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
     background-color: var(--playbar-bkg);
+}
+ .music-player{
     height: 90px;
 
     --padding: 0.5rem;
@@ -306,81 +376,41 @@ i:hover{
     font-weight: bold;
     color: var(--white);
  }
- /*************************************************
-    SIDEBAR
- *************************************************/
- .logo{
-    height: 45px;
-    margin: 15px 1.5rem;
- }
-.logo-small{
-    transform: scale(0.2);
-    display: none;
-}
-.text-S{
-    color: var(--nav-font-gray);
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 2rem;
-}
-.text-M{
-    color: var(--nav-font-gray);
-    font-size: 13px;
-    font-weight: bold;
-}
-.text-L{
-    color: var(--white);
-    font-size: 13px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
  /************************************************
     RESPONSIVE
  ************************************************/
  /* DESKTOP  */
  @media screen and (max-width:1200px) {
-    .container{
-          min-width: 878px;    
-    }
-    .card{
-        width: calc((100% / 4) - 1.5rem);
+    .cover{
+        width: calc(100% / 4);
         }
 }   
  /* TABELET  */
  @media screen and (max-width:992px) {
-   .container{
+   /* .container{
          min-width: 878px;
-   }
-   .card{
-    width: calc((100% / 3) - 1.5rem);
+   } */
+   .cover{
+    width: calc(100% / 3);
     }
  }
  /* PHONE S  */
  @media screen and (max-width:768px) {
-    .container{
+    /* .container{
         min-width: 639px;
-  }
+  } */
   
-  .card{
-   width: calc((100% / 2) - 1.5rem);
+  .cover{
+   width: calc(100% / 2);
    }
 }
  /* PHONE XS  */
  @media screen and (max-width:576px) {
-    .container{
+    /* .container{
         min-width: 552px;
-    }
-    .card{
+    } */
+    .cover{
         width: 100%;
-    }
-    nav{
-        width: 50px;
-    }
-    .main-content{
-        width: calc(100% - 50px);
-    }
-    aside{
-        width: calc(1440px - 50px);
     }
   
 }
