@@ -19,32 +19,57 @@
         <main class="d-flex">
             <!-- SIDEBAR  -->
             <nav class="left-sidebar">
-               <div class="logo">
-                    <img src="./img/logo.svg" alt="logo" class="logo">
-                    <img src="./img/logo-small.svg" alt="logo" class="logo-small">
+                <div class="top-nav d-flex flex-col">
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="logo">
+                    </div>
+                    <div class="logo-small">
+                        <img src="./img/logo-small.svg" alt="logo">
+                    </div>
+                    <div class="nav-main">
+                        <ul>
+                            <li>
+                                <a class="d-block subtitle active" href="#">
+                                    <img class="icon-small" src="./img/home.svg" alt="Home">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block subtitle" href="#">
+                                    <img class="icon-small" src="./img/search.svg" alt="Search">
+                                    <span>Cerca</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-block subtitle" href="#">
+                                    <img class="icon-small" src="./img/libreria.svg" alt="Library">
+                                    <span>La tua libreria</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="playlist-container">
+                        <h2>Playlist</h2>
+                        <a href="#" class="add-playlist">
+                            <span>Crea Playlist</span>
+                        </a>
+                        <ul class="playlist">
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                            <li><a class="d-block subtitle" href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
                 </div>
-               <ul class="text-S">
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>Cerca</li>
-                    <li><a href="#"></a>La tua libreria</li>
-               </ul>
-               <div class="playlist">
-                    <div class="text-L">playlist</div>
-                    <div class="text-M">Crea Playlist</div>
-                    <ul class="text-S">
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                    </ul>
-               </div>
-
+                
+                <div class="bottom-bar"></div>
             </nav>
-            <!-- MAIN CONTENT -->
+            
+                <!-- MAIN CONTENT -->
             <div class="main-content">
                 <!-- TOP BAR  -->
                 <div class="top-bar d-flex justify-end align-center">
@@ -208,10 +233,11 @@
                     
                 </div>
             </div>
+
         </main> 
 
         <!-- PLAYBAR  -->
-    <div class="playbar">
+        <div class="playbar">
         <div class="music-player d-flex justify-center align-center">
               <div class="song-bar d-flex align-center justify-start">
                   <div class="song-infos d-flex align-center">
