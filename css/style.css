@@ -426,34 +426,51 @@ i:hover{
  @media screen and (max-width:1200px) {
     .cover{
         width: calc(100% / 4);
-        }
+    }
 }   
  /* TABELET  */
  @media screen and (max-width:992px) {
-   /* .container{
-         min-width: 878px;
-   } */
    .cover{
     width: calc(100% / 3);
     }
+    .logo img{
+        width: 70%;
+        margin: 1rem;
+     }
  }
  /* PHONE S  */
  @media screen and (max-width:768px) {
-    /* .container{
-        min-width: 639px;
-  } */
-  
-  .cover{
-   width: calc(100% / 2);
-   }
+    .cover{
+        width: calc(100% / 2);
+    }
+    .icons{
+        padding-left: 0;
+    }
+    .progress-container{
+        width: 60%;
+    }
 }
  /* PHONE XS  */
  @media screen and (max-width:576px) {
-    /* .container{
-        min-width: 552px;
-    } */
     .cover{
         width: 100%;
+    }
+    .song-infos{
+        gap: 0.50em;
+    }
+   
+    .icons{
+        flex-direction: column;
+        gap: .50rem;
+    }
+    .progress-container{
+        width: 80%;
+    }
+    .other-features i{
+        width: 10px;
+    }
+    .volume-bar .progress-bar{
+        width: 4em;
     }
 }
 
