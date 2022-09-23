@@ -132,13 +132,8 @@ img{
     min-height: 480px;
 }
 .top-nav{
-    height: calc(100% - 80px);
+    height: calc(100% - 90px);
     width: 100%;
-}
-.bottom-bar{
-    height: 80px;
-    width: 100%;
-    background-color: cadetblue;
 }
 .logo img{
    width: 80%;
@@ -165,6 +160,11 @@ img{
     overflow: hidden;
     padding: 40px 20px;
 }
+.playlist-container h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+}
 .add-playlist{
     margin: 1rem 0;
     display: block;
@@ -177,7 +177,7 @@ img{
     width: 37px;
     height: 37px;
     margin-right: 10px;
-    background-color: var(--icon-light-gray);
+    background-color: var(--green-yellow);
     font-size: 35px;
     text-align: center;
     line-height: 37px;
@@ -191,6 +191,32 @@ img{
 }
 .playlist li a{
     line-height: 2rem;
+}
+.bottom-bar{
+    height: 90px;
+    width: 100%;
+}
+.bottom-bar a:first-child {
+    border-bottom: 1px solid var(--nav-font-gray);
+    margin: 1rem;
+    padding-bottom: .50rem;
+}
+.bottom-bar a i{
+    margin-right: 10px;
+}
+.bottom-bar a:first-child i{
+    color: var(--green-yellow);
+    margin-right: 10px;
+}
+.user{
+    color: var(--side-bar-bkg);
+    background-color: var(--green-yellow);
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: .75rem;
+}
+.user-name{
+    font-weight: bold;
 }
 /*************************************************
     MAIN
