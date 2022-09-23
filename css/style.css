@@ -143,7 +143,8 @@ img{
     display: none;
 }
 .icon-small{
-    width: 15%;
+    height: 26px;
+    width: auto;
     vertical-align: text-bottom;
     display: inline-block;
 }
@@ -454,6 +455,44 @@ i:hover{
  @media screen and (max-width:576px) {
     .cover{
         width: 100%;
+    }
+    .left-sidebar{
+        width: 50px;
+    }
+    .main-content{
+        width: calc(100% - 50px);
+    }
+    .top-bar{
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-small{
+        display: block;
+        width: 60%;
+        margin: .75rem auto;
+    }
+    span{
+        display: none;
+    }
+    .nav-main ul li a{
+        border-left: none;
+        padding: 0;
+        margin:.75rem;
+    }
+    .nav-main ul li a.active{
+        border-left: none;
+    }
+    .bottom-bar a:first-child {
+        border-bottom: none;
+    }
+    .user{
+        background-color: var(--white);
+    }
+    .playlist-container{
+        display: none;
     }
     .song-infos{
         gap: 0.50em;
